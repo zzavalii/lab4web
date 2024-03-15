@@ -1,0 +1,282 @@
+*{
+    margin: 0 auto;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #5A4F4F;
+    border-radius: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(250, 250, 250, 0.54);
+    border-radius: 5px;
+}
+body{
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+}
+.container1{
+    width: 100%;
+    height: 1080px;
+    background-color: #131313;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #5A4F4F;
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    margin: 0px 0px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+.menu{
+    width: 800px;
+    display: flex;
+    margin-left: 0.5vw;
+    flex-direction: row;
+}
+.con1{
+    padding-left: 2vw;
+    padding-right: 2vw;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+.con1:hover{
+    background-color: rgba(152, 152, 152, 0.4);
+}
+.car1{
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.message {
+    position: fixed;
+    top: 80vh;
+    left: 90vw;
+    animation: jump 1s infinite alternate;
+}
+@keyframes jump {
+    100%, 5% { transform: translateY(0); }
+    10% { transform: translateY(-4px); }
+}
+.btn{
+    background-color: #827B7B;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 350px;
+    font-size: 12px;
+}
+.btn:hover{
+    background-color: #252525;
+    border: 1px solid white;
+    height: 48px;
+    width: 348px;
+}
+.car{
+    margin-right: -15px;
+}
+.upperimg{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70vw;
+}
+.toimg{
+    margin-left: -10px;
+}
+.about{
+    margin-top: 15px;
+}
+.autoconfigure{
+    margin-right: 50px;
+}
+.undtext{
+    width: 450px;
+}
+.h3improve{
+    font-weight: normal;
+}
+.leftcon{
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 400px;
+}
+.container2 {
+    max-width: 100%; 
+    padding: 0 10px; 
+    height: 1150px;
+    background-color: #0F0E0E;
+}
+.carrow1 {
+    margin-top: 35px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center; 
+}
+.jaguars {
+    max-width: 100%; 
+    height: auto; 
+}
+.jaguars:hover{
+    opacity: 0.6;
+}
+.carrow2{
+    margin-top: 35px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center; 
+    margin-right: 470px;
+}
+.container3{
+    height: 1100px;
+    background-color: #000000;
+}
+.carelipse{
+    display: flex;
+    margin-right: 100px;
+    width: 100px;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.newerajag{
+    margin-top: -800px;
+    margin-left: 100px;
+}
+.pngcar{
+    margin-top: 40px;
+    margin-left: 70px;
+    width: 670px;
+}
+.undercar{
+    width: 680px;
+    margin-left: 100px;
+}
+.btn{
+    margin-top: 15px;
+    margin-left: 0px;
+}
+.cars4{
+    display: flex;
+    margin-top: 150px;
+    width: 700px;
+    margin-right: 100px;
+}
+.container4{
+    height: 800px;
+    background-color: #131313;
+}
+.morecarrow{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+}
+.pmorecar{
+    width: 550px;
+}
+.container5{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    align-items: center;
+    background-color: black;
+}
+.con5{
+    width: 400px;
+}
+.footer{
+    height: 800px;
+    background-color: #353535;
+    display: flex;
+    flex-direction: row;
+}
+.jags{
+    margin-top: 15px;
+    font-size: 15px;
+}
+.logos{
+    margin-left: -0px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 120px;
+    font-size: 12px;
+}
+.footerjags{
+    margin-top: 15px;
+    font-size: 20px;
+}
+.jag{
+    margin-top: 100px;
+    width: 400px;
+}
+.block{
+    margin-top: 80px;
+    margin-left: 100px;
+}
+.block4{
+    margin-right: 70px;
+}
+.youtu{
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    
+}
+.youtu:hover{
+    background-color: #DD2A2A;
+}
+.insta{
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+.insta:hover{
+    background-color: #E897EF;
+}
+.face{
+    padding-left: 14px;
+    padding-right: 14px;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+.face:hover{
+    background-color: #3894E9;
+}
+.linkdn{
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+.linkdn:hover{
+    background-color: #2A46D8;
+}
+.h3improve:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
