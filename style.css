@@ -20,6 +20,49 @@ body{
     height: 1080px;
     background-color: #131313;
 }
+/*======================менюшка=====================*/
+.menubar{
+    display: none;
+    position: fixed;
+    width: 80px;
+    height: 80px;
+}
+.imgmenubar{
+    margin-left: 25px;
+    margin-top: 30px;
+}
+.allmenu{
+    display: none;
+    margin-top: 80px;
+    position: fixed;
+    height: 100%;
+    width: 430px;
+    background-color: #645959;
+}
+.conmenu{
+    height: 79px;
+    background-color: #5A4F4F;
+    /* padding-left: 30px; */
+    border-top: 1px solid #393737;
+}
+.hcon{
+    padding-left: 30px;
+    padding-top: 27.5px;
+}
+.noneconbtn{
+    margin-left: -80px;
+}
+.conmenu2{
+    height: 79px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.imgconmenu{
+    margin-left: 30px;
+    margin-right: 120px;
+}
+/*======================менюшка=====================*/
 .header{
     position: fixed;
     width: 100%;
@@ -38,12 +81,12 @@ body{
     letter-spacing: 5px;
 }
 .menu{
-    width: 800px;
     display: flex;
     margin-left: 0.5vw;
     flex-direction: row;
 }
 .con1{
+    width: 15%;
     padding-left: 2vw;
     padding-right: 2vw;
     white-space: nowrap;
@@ -140,7 +183,6 @@ body{
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: center; 
-    margin-right: 470px;
 }
 .container3{
     height: 1100px;
@@ -177,15 +219,16 @@ body{
     margin-right: 100px;
 }
 .container4{
+    width: 100%;
     height: 800px;
     background-color: #131313;
 }
 .morecarrow{
-    margin-left: 70px;
-    margin-right: 70px;
     margin-top: 60px;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 .pmorecar{
     width: 550px;
@@ -207,6 +250,8 @@ body{
     flex-direction: row;
 }
 .jags{
+    margin: 0;
+    width: 200px;
     margin-top: 15px;
     font-size: 15px;
 }
@@ -223,11 +268,13 @@ body{
     font-size: 20px;
 }
 .jag{
-    margin-top: 100px;
-    width: 400px;
+    margin-top: 20px;
+    width: 300px;
 }
 .block{
     margin-top: 80px;
+}
+.block1{
     margin-left: 100px;
 }
 .block4{
@@ -242,6 +289,9 @@ body{
 }
 .youtu:hover{
     background-color: #DD2A2A;
+}
+.newerajag{
+    width: 870px;
 }
 .insta{
     padding-left: 12px;
@@ -262,6 +312,9 @@ body{
     width: 50px;
     height: 50px;
 }
+.testdrive{
+    margin-left: 100px;
+}
 .face:hover{
     background-color: #3894E9;
 }
@@ -279,4 +332,127 @@ body{
 .h3improve:hover{
     text-decoration: underline;
     font-weight: bold;
+}
+
+
+@media only screen and (max-width: 1733px) {
+    .framecar{
+        width: 400px;
+    }
+    .h2morecar{
+        width: 400px;
+    }
+    .pmorecar{
+        width: 400px;
+    }
+    .jaguars{
+        width: 90%;
+    }
+    .imgcar{
+        width: 400px;
+    }
+    .leftcon{
+        width: 300px;
+    }
+}
+
+
+@media only screen and (max-width: 1430px) {
+    .carrow1, .carrow2{
+        display: flex;
+        flex-direction: column;
+    }
+    .container2{
+        height: 100%;
+        padding: 0px 0px 100px 0px;
+    }
+    .jaguars{
+        max-width: none;
+
+    }
+    .imgcar{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .leftcon{
+        width: 800px;
+        margin-left: 120px;
+    }
+    .con1{
+        width: 20%;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .menu{
+        visibility: hidden;
+    }
+    .leftcon{
+        margin-left: 35px;
+        width: 80%;
+    }
+    .newerajag{
+        font-size: 12px;
+        width: 100px;
+    }
+    .upperimg{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        padding-left: 90px;
+    }
+    .menubar{
+        display: block;
+    }
+    .message {
+        top: 80vh;
+        left: 70vw;
+        height: 20px;
+    }
+    .main{
+        display: none;
+    }
+    .container1{
+        height: 0px;
+    }
+    .jaguars{
+        margin-top: 20px;
+    }
+
+
+
+
+    .undercar{
+        margin-left: 10px;
+    }
+    .morecarrow{
+        display: flex;
+        flex-direction: column;
+    }
+    .container5{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .testdrive{
+        margin: 0;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .pngcar{
+        width: 200px;
+    }
+    .undercar{
+        width: 200px;
+    }
+    .cars4{
+        width: 100px;
+    }
 }
