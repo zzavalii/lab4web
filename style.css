@@ -11,15 +11,6 @@
     background: rgba(250, 250, 250, 0.54);
     border-radius: 5px;
 }
-body{
-    color: #ffffff;
-    font-family: "Montserrat", sans-serif;
-}
-.container1{
-    width: 100%;
-    height: 1080px;
-    background-color: #131313;
-}
 /*======================менюшка=====================*/
 .menubar{
     display: none;
@@ -63,11 +54,21 @@ body{
     margin-right: 120px;
 }
 /*======================менюшка=====================*/
+body{
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+}
+.container1{
+    width: 100%;
+    height: 1080px;
+    background-color: #131313;
+}
 .header{
+    z-index: 1;
     position: fixed;
     width: 100%;
     height: 80px;
-    background-color: #5A4F4F;
+    background-color: #595a4f;
     display: flex;
     flex-direction: row;
 }
@@ -122,6 +123,10 @@ body{
     height: 50px;
     width: 350px;
     font-size: 12px;
+    margin-right: -40px;
+}
+.btnconfigure{
+    position: absolute;
 }
 .btn:hover{
     background-color: #252525;
@@ -167,9 +172,8 @@ body{
 }
 .carrow1 {
     margin-top: 35px;
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: center; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(200px, 1fr))
 }
 .jaguars {
     max-width: 100%; 
@@ -177,12 +181,12 @@ body{
 }
 .jaguars:hover{
     opacity: 0.6;
+    transition: 1s;
 }
 .carrow2{
     margin-top: 35px;
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: center; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
 }
 .container3{
     height: 1100px;
@@ -226,9 +230,8 @@ body{
 .morecarrow{
     margin-top: 60px;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .pmorecar{
     width: 550px;
@@ -332,10 +335,29 @@ body{
 .h3improve:hover{
     text-decoration: underline;
     font-weight: bold;
+    color: #c3d1d7;
+}
+.textmorecar{
+    margin-top: 15px;
+}
+.h2morecar{
+    margin-top: 20px;
+}
+.modeljaguartxt{
+    letter-spacing: 3px; 
+    padding-top: 40px; 
+    padding-left: 40px; 
+    font-size: 25px;
+}
+.learnabout{
+    margin-left: 100px; 
+    padding-top: 60px; 
+    font-size: 30px;
 }
 
 
-@media only screen and (max-width: 1733px) {
+/* ============================================================ MEDIA QUERIES ===============================================================  */
+@media only screen and (max-width: 1720px) {
     .framecar{
         width: 400px;
     }
@@ -354,13 +376,41 @@ body{
     .leftcon{
         width: 300px;
     }
+    .carrow2{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
+    }
 }
 
+@media only screen and (max-width: 1600px) {
+    .h2morecar, .pmorecar, .framecar{
+        width: 400px;
+    }
+    .jaguars{
+        width: 90%;
+    }
+    .imgcar{
+        width: 350px;
+    }
+    .carrow2{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
+    }
+    .h3opis{
+        font-size: 15px;
+    }
+    .opiscon5{
+        font-size: 13px;
+    }
+}
 
 @media only screen and (max-width: 1430px) {
     .carrow1, .carrow2{
         display: flex;
         flex-direction: column;
+    }
+    .container1{
+        height: 900px;
     }
     .container2{
         height: 100%;
@@ -368,22 +418,156 @@ body{
     }
     .jaguars{
         max-width: none;
-
     }
     .imgcar{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        width: 100vw;
+        width: 90vw;
     }
     .leftcon{
-        width: 800px;
-        margin-left: 120px;
+        width: 80%;
+        margin-left: 100px;
     }
     .con1{
         width: 20%;
         padding-left: 1vw;
         padding-right: 1vw;
+    }
+    .pngcar{
+        width: 500px;
+    }
+    .cars4{
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 1260px){
+    .framecar, .morecar{
+        width: 300px;
+    }
+    .pmorecar{
+        font-size: 15px;
+        width: 300px;
+    }
+    .h2morecar{
+        width: 300px;
+        font-size: 20px;
+    }
+    .h3improve{
+        font-size: 15px;
+    }
+    .con5{
+        width: 250px;
+    }
+    .con1{
+        font-size: 12px;
+        width: 20%;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    .message {
+        top: 80vh;
+        left: 88vw;
+    }
+    .footerjags{
+        font-size: 15px;
+    }
+    .h3improve{
+        font-size: 12px;
+    }
+    .logosh3{
+        font-size: 13px;
+    }
+    .jag{
+        margin-top: 60px;
+        margin-left: -20px;
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .framecar{
+        width: 100%;
+    }
+    .pmorecar{
+        font-size: 15px;
+        width: 600px;
+    }
+    .morecar{
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+    .h2morecar{
+        width: 600px;
+        font-size: 20px;
+    }
+    .h3improve{
+        font-size: 15px;
+    }
+    .con5{
+        width: 150px;
+    }
+    .con1{
+        font-size: 12px;
+        width: 20%;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    .logo{
+        margin: 0px 0px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        letter-spacing: 5px;
+    }
+    .menu{
+        width: 80%;
+        margin-left: -40px;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    .container1{
+        display: none;
+    }
+    .footerjags, .logosh3{
+        font-size: 13px;
+    }
+    .jags{
+        font-size: 10px;
+    }
+    .jag{
+        margin-top: 60px;
+        margin-left: -20px;
+        width: 200px;
+    }
+    .newerajag{
+        font-size: 20px;
+        width: 700px;
+    }
+    .pngcar{
+        margin-top: 200px;
+        width: 400px;
+    }
+    .imgcar0{
+        width: 500px;
+    }
+    .morecarrow{
+        display: flex;
+        flex-direction: column;
+    }
+    .container4{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .textmorecar{
+        width: 600px;
+    }
+    .morecarbottommargin{
+        margin-bottom: 20px;
     }
 }
 
@@ -417,16 +601,9 @@ body{
     .main{
         display: none;
     }
-    .container1{
-        height: 0px;
-    }
     .jaguars{
         margin-top: 20px;
     }
-
-
-
-
     .undercar{
         margin-left: 10px;
     }
@@ -446,13 +623,21 @@ body{
         display: flex;
         flex-direction: column;
     }
-    .pngcar{
-        width: 200px;
-    }
-    .undercar{
+    .pngcar, .undercar{
         width: 200px;
     }
     .cars4{
         width: 100px;
+    }
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+    .framecar{
+        width: 200px; 
+        
+    }
+    .morecar{
+        width: 200px;
+    }
+    .textmorecar{
+        width: 200px;
     }
 }
